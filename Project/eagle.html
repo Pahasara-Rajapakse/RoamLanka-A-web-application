@@ -1,0 +1,681 @@
+<html>
+<head>
+<Title>Heladiv Hotel</Title>
+<link rel="icon" type="image/x-icon" href="icon.png">
+<style>
+
+ .navigation {
+            height: 10%;
+            width: 100%;
+            background-color: inherit;
+            margin-top: -1px;
+			background-position:fixed;
+			font-size: 20px;
+        }
+
+        .content {
+            height: 80%;
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+        }
+		
+		.foot2{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:150px;			
+		}
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+        
+        }
+
+        li {
+            display: block;
+            float: right;
+            margin-right: 4%;
+            font-weight: bold;
+            position: relative; 
+        }
+
+        .dropdown-content {
+		    margin-top:1px;
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0);
+            z-index: 1;
+            transform: translateX(0%);
+			border-radius:10px;
+            
+        }	
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: ;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:hover {
+            color: #85b453; 
+        }
+
+        .horizontalLine {
+            background-color: #f4cc27; 
+            height: 5%;			
+           
+            margin-top:5px;			
+        }
+		
+		.logo{
+		    width : 105;
+            height : 105;
+        	
+		}
+		
+		.viewd,
+		.offers,
+		.trending{
+            display: block;
+            width: 98%;
+			height : 100%;
+            background-color: #f4cc27 ;
+			color : black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+		    border:none;
+			margin-left:45px;
+		}
+		
+		.viewd:hover,
+		.offers:hover,
+		.trending:hover{
+            cursor: pointer;
+            background-color: white;
+			border:2px solid #198238;
+			
+		}
+
+		.visit{
+            display: block;
+            width: 30%;
+            border: none;
+            background-color:  #B0621F;
+            color: white;
+            padding: 7px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+			margin-left:245px;
+			margin-top: -33px;
+		}
+		
+
+		.visit:hover{
+            cursor: pointer;
+            background-color: #f4cc27;
+			color:black;
+		}	
+ 
+        .ft{
+		    margin-right: 20px; 
+			font-size:23px;
+		} 
+		
+		.whatsapp,
+		.fb,
+		.twit{
+		    border-radius : 50px;
+            		
+		}
+
+		.whatsapp,
+		.twit,
+		.fb{
+		            width : 50px ;
+					height : 50px ;			
+		}
+
+		
+		.whatsapp:hover,
+		.fb:hover,
+		.twit:hover{
+		            width : 40px ;
+					height : 40px ;
+                    border: 2px solid #000000;					
+		}		
+		
+        .heart{
+
+		    margin-left : 50px; 
+		}
+		
+        .heart1{
+
+		    margin-left : 100px; 
+		}	
+
+		.text-overlay {
+            position: absolute;
+            top: 85%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100px;
+            text-align: left;
+
+        }	
+		
+		.buttonWish{
+		    position:absolute; 
+			left:19%; 
+			width:35px; 
+			height:33px; 
+			background-color:rgba(0,0,0,0); 
+			border : none; 
+			cursor:pointer;
+		}
+		
+		#bor{
+	border-radius:50%;
+	width:400px;
+	height:400px;
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.sl {
+     background-color: #034f20;
+	 width:50%;
+	 border: 2px solid gray;
+	 padding:50px;
+	 font-size: 20px;
+	 margin: auto;
+	 border-radius: 12px;
+	
+	 }
+	 
+.new {
+     background-color: white;
+	 width:50%;
+	 border: none;
+	 padding:50px;
+	 font-size: 20px;
+	 margin: auto;
+	 border-radius: 12px;
+	
+	 }
+	 
+.block {
+  width: 30%;
+  border: none;
+  background-color: #f4cc27;
+  color: black;
+  padding: 6px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 70%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+
+.border {
+  border-style:solid;
+  border-color: #034f20;
+  border-collapse: collapse;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="navigation">
+	    <div style = "margin-bottom:-50px;">
+            <a href="welcome.html"><img src = "logo.jpg" alt = "Logo Image" class = "logo" width = 125px height = 105px style = "margin-left:20px;"></a>  	
+	    </div>
+        <ul>  
+            <li style="margin-right:0px;"><a href="sign in.html">SIGN IN</a></li>
+            <li><a href="sign up.html">SIGN UP</a></li>
+            <li>
+			    <a>SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="welcome.html#about" style = "margin-top : 30px;"> About Us </a>
+                    <a href="services.html"> Contact Us </a>
+                    <a href="services.html#contact"> Q&A </a>
+                </div> 			
+			</li>
+            <li>
+			<a>TRANSPORTATION</a>
+			    <div class="dropdown-content">
+                    <a href="train.html" style = "margin-top : 30px;"> Train  </a>
+                    <a href="taxi.html"> Taxi </a>
+					<a href="rental.html"> Rental </a>
+                </div>			
+			</li>            
+			<li>
+			    <a>RESORTS</a>
+                <div class="dropdown-content">
+                   
+                    <a href="nuwaraEliya.html" style = "margin-top : 30px;"> Nuwara Eliya </a>
+                    <a href="galle.html"> Galle </a>
+                    <a href="trinco.html"> Trincomalee </a>
+					<a href="kandy.html"> Kandy </a>
+					<a href="anura.html"> Anuradhapuraya </a>
+                </div> 			
+			</li>  
+            <li><a href="camping.html"> CAMPING</a> </li>
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+        <hr class="horizontalLine">   
+    </div>	
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<h1><font face="cambria" color="Black" size="10"><center>Eagle Regency Hotel</center></font></h1><br><br>
+<center>
+<table style="width:65%">
+<tr>
+	<td colspan="3">
+		<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	</td>
+</tr>
+<tr>
+	<td width="3%">
+		<img src="location.png" alt="location" width="30" height="30">
+	</td>
+	<td width="35%">
+		No 80, welihiriya, Udaperadeniya Rd, Kandy 20000
+	</td>
+	<td width="27%" align="right">
+		<button class="block" onclick="document.location='form1.html'">B O O K</button>
+	</td>
+</tr>
+</table>
+</center>
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Eagle3.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Eagle2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Eagle1.jpg" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+<br><br><br>
+<div class="sl">
+<h2 style="color:white;">About</h2>
+   <p style="font-family: Arial, Helvetica, sans-serif;color:white;">
+ Eagle Regency Hotel Kandy offers a comfortable stay in the heart of Kandy, Sri Lanka. Conveniently located near the city's main attractions, the hotel provides cozy accommodations with modern amenities for both leisure and business travelers. Guests can enjoy delicious meals at the on-site restaurant, which serves a variety of local and international cuisine. The hotel also features a rooftop terrace with panoramic views of the surrounding mountains and cityscape. With its warm hospitality and convenient location, Eagle Regency Hotel Kandy is an ideal choice for travelers seeking a pleasant stay in the cultural capital of Sri Lanka.
+ 
+   </p>
+   <hr>
+   <p style="font-family: Arial, Helvetica, sans-serif;color:white;">
+   <i><b>For more details, visit Eagle Regency Hotel website</b></i>
+   </p>
+   <p>
+	<button class="block" onclick="document.location='https://www.eagleregency.com/'">V I S I T</button>
+	</p>
+</div>
+	
+	
+<br><br>
+
+<div class="new">
+<h2 style="text-align:center;">Facilities Provided By Eagle Regency Hotel</h2>
+   
+<center>  
+<table style="width:100%">
+<tr style="height:50px;">
+	<td colspan="2" align="center">
+		<p style="margin-right:90px"><b>Facilities for Hotel</b></p>
+	</td>
+	<td colspan="2" align="center">
+		<p style="margin-left:90px"><b>Facilities for Rooms</b></p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td width="10%" align="right">
+		<img src="parking.png" alt="parking" width="30" height="30">
+	</td>
+	<td width="30%">
+		<p style="color:#8b8680;">Free Parking</p>
+	</td>
+	<td width="20%" align="right">
+		<img src="room-services.png" alt="room-services" width="30" height="30">
+	</td>
+	<td width="20%">
+		<p style="color:#8b8680;">Room Services</p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td width="10%" align="right">
+		<img src="wifi.png" alt="wifi" width="30" height="30">
+	</td>
+	<td width="30%">
+		<p style="color:#8b8680;">Free WiFi</p>
+	</td>
+	<td width="20%" align="right">
+		<img src="air.png" alt="air" width="30" height="30">
+	</td>
+	<td width="20%">
+		<p style="color:#8b8680;">Air Conditioning</p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td width="10%" align="right">
+		<img src="no-smoke.png" alt="no-smoke" width="30" height="30">
+	</td>
+	<td width="30%">
+		<p style="color:#8b8680;">Non-smoking rooms</p>
+	</td>
+	<td width="20%" align="right">
+		<img src="family.png" alt="family" width="30" height="30">
+	</td>
+	<td width="20%">
+		<p style="color:#8b8680;">Family Rooms</p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td width="10%" align="right">
+		<img src="seating.png" alt="seating" width="30" height="30">
+	</td>
+	<td width="30%">
+		<p style="color:#8b8680;">Seating Area</p>
+	</td>
+	<td width="20%" align="right">
+		<img src="dining.png" alt="dining" width="30" height="30">
+	</td>
+	<td width="20%">
+		<p style="color:#8b8680;">Separate Dining Area</p>
+	</td>
+</tr>
+</table>
+</center>
+
+</div>  
+
+
+<div class="new">
+<h2 style="text-align:center;">Prices of the Rooms</h2>
+
+   
+<center>  
+<table style="width:100%">
+<tr style="height:50px;">
+	<td class="border" style="color:white; width:50%; background-color: #034f20;text-align:center;">
+		<p><b>Room Type</b></p>
+	</td>
+	<td class="border" style="color:white; width:50%; background-color: #034f20;text-align:center;">
+		<p><b>Price for 1 night</b></p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td class="border" style="width:50%;text-align:center;">
+		<p>A/C Single Room</p>
+	</td>
+	<td class="border" style="width:50%;text-align:center;">
+		<p>LKR 50 000.00</p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td class="border" style="width:50%;text-align:center;">
+		<p>A/C Double Room</p>
+	</td>
+	<td class="border" style="width:50%;text-align:center;">
+		<p>LKR 75 000.00</p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td class="border" style="width:50%;text-align:center;">
+		<p>Non A/C Single Room</p>
+	</td>
+	<td class="border" style="width:50%;text-align:center;">
+		<p>LKR 30 000.00</p>
+	</td>
+</tr>
+
+<tr style="height:50px;">
+	<td class="border" style="width:50%;text-align:center;">
+		<p>Non A/C Double Room</p>
+	</td>
+	<td class="border" style="width:50%;text-align:center;">
+		<p>LKR 40 000.00</p>
+	</td>
+</tr>
+</table>
+</center>
+
+   
+   
+ </div>  
+<br><br>  
+
+<h1 style="text-align:center;font-family: Arial, Helvetica, sans-serif">Destination</h1>
+<div class="google-map">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15831.518523875888!2d80.6122488!3d7.2545379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae368b533c68e9d%3A0x73499aebfb7272b1!2sEagle%20Regency%20Hotel!5e0!3m2!1sen!2slk!4v1709746377966!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+ </iframe>
+</div>
+<br><br>
+
+<div style = "foot2">
+        <table>
+			 <hr style = "background-color:#f4cc27; height:0.5%;">
+            <tr>
+			    <td> <a href = "welcome.html"><img src = "logo.jpg" alt = "Logo Image" style = "margin-left:50px;"><a/> </td>
+                <td> <a href = "welcome.html" class = "ft" style = "margin-left : 160px;"> Home <a/> </td>
+                <td> <a href = "welcome.html#about" class = "ft" style = "margin-left : 50px;"> About Us <a/> </td>		
+                <td> <a href = "services.html" class = "ft" style = "margin-left : 50px;"> Contact Us <a/> </td>
+                <td> <a href = "" class = "ft" style = "margin-left : 50px;"> Services <a/> </td>
+                <td> 
+
+				    <a href = "" class = "ft"> <img src = "whatsapp.jpg" alt = "whatsapp Image" class = "whatsapp" style = "margin-right:-10px; margin-left:80px;"> <a/> 
+				    <a href = "" class = "ft"> <img src = "fb.jpg" alt = "Facebook Image" class = "fb" style = "margin-right:-10px;"> <a/>
+				    <a href = "" class = "ft"> <img src = "twit.jpg" alt = "Twitter Image" class = "twit"> <a/>
+				
+				</td>				
+			</td>
+		</table>		
+        <hr style = "background-color:#f4cc27; height:0.5%;"> 
+		<p align = "center">Copyright © 2024 All Rights Reserved by Roam Lanka</p>
+	</div>	
+
+
+</body>
+</html> 

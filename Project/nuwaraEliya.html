@@ -1,0 +1,416 @@
+<html>
+<head>
+    <title> Roam Lanka </title>
+        <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <style>
+	video {
+  width: 100%;
+  height: auto;
+}
+
+        .navigation {
+            height: 10%;
+            width: 100%;
+            background-color: inherit;
+            margin-top: -1px;
+			background-position:fixed;
+			font-size: 20px;
+        }
+
+        .content {
+            height: 80%;
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+        }
+		
+		.foot2{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:150px;			
+		}
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+        
+        }
+
+        li {
+            display: block;
+            float: right;
+            margin-right: 4%;
+            font-weight: bold;
+            position: relative; 
+        }
+
+        .dropdown-content {
+		    margin-top:1px;
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0);
+            z-index: 1;
+            transform: translateX(0%);
+			border-radius:10px;
+            
+        }	
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: ;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:hover {
+            color: #85b453; 
+        }
+
+        .horizontalLine {
+            background-color: #f4cc27; 
+            height: 5%;			
+           
+            margin-top:5px;			
+        }
+		
+		.logo{
+		    width : 105;
+            height : 105;
+        	
+		}
+		
+		.viewd,
+		.offers,
+		.trending{
+            display: block;
+            width: 98%;
+			height : 100%;
+            background-color: #f4cc27 ;
+			color : black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+		    border:none;
+			margin-left:45px;
+		}
+		
+		.viewd:hover,
+		.offers:hover,
+		.trending:hover{
+            cursor: pointer;
+            background-color: white;
+			border:2px solid #198238;
+			
+		}
+
+		.visit{
+            display: block;
+            width: 30%;
+            border: none;
+            background-color:  #B0621F;
+            color: white;
+            padding: 7px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+			margin-left:245px;
+			margin-top: -33px;
+		}
+		
+
+		.visit:hover{
+            cursor: pointer;
+            background-color: #f4cc27;
+			color:black;
+		}	
+ 
+        .ft{
+		    margin-right: 20px; 
+			font-size:23px;
+		} 
+		
+		.whatsapp,
+		.fb,
+		.twit{
+		    border-radius : 50px;
+            		
+		}
+
+		.whatsapp,
+		.twit,
+		.fb{
+		            width : 50px ;
+					height : 50px ;			
+		}
+
+		
+		.whatsapp:hover,
+		.fb:hover,
+		.twit:hover{
+		            width : 40px ;
+					height : 40px ;
+                    border: 2px solid #000000;					
+		}		
+		
+        .heart{
+
+		    margin-left : 50px; 
+		}
+		
+        .heart1{
+
+		    margin-left : 100px; 
+		}	
+
+		.text-overlay {
+            position: absolute;
+            top: 85%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100px;
+            text-align: left;
+
+        }	
+		
+		.buttonWish{
+		    position:absolute; 
+			left:19%; 
+			width:35px; 
+			height:33px; 
+			background-color:rgba(0,0,0,0); 
+			border : none; 
+			cursor:pointer;
+		}
+		
+		#bor{
+	border-radius:50%;
+	width:400px;
+	height:400px;
+}
+
+
+.block {
+  width: 30%;
+  border: none;
+  background-color: #f4cc27;
+  color: black;
+  padding: 6px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>   
+
+   
+</head>
+
+<body>
+    <div class="navigation">
+	    <div style = "margin-bottom:-50px;">
+            <a href="welcome.html"><img src = "logo.jpg" alt = "Logo Image" class = "logo" width = 125px height = 105px style = "margin-left:20px;"></a>  	
+	    </div>
+        <ul>  
+            <li style="margin-right:0px;"><a href="sign in.html">SIGN IN</a></li>
+            <li><a href="sign up.html">SIGN UP</a></li>
+            <li>
+			    <a>SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="welcome.html#about" style = "margin-top : 30px;"> About Us </a>
+                    <a href="services.html"> Contact Us </a>
+                    <a href="services.html#contact"> Q&A </a>
+                </div> 			
+			</li>
+            <li>
+			<a>TRANSPORTATION</a>
+			    <div class="dropdown-content">
+                    <a href="train.html" style = "margin-top : 30px;"> Train  </a>
+                    <a href="taxi.html"> Taxi </a>
+					<a href="rental.html"> Rental </a>
+                </div>			
+			</li>            
+			<li>
+			    <a>RESORTS</a>
+                <div class="dropdown-content">
+                   
+                    <a href="nuwaraEliya.html" style = "margin-top : 30px;"> Nuwara Eliya </a>
+                    <a href="galle.html"> Galle </a>
+                    <a href="trinco.html"> Trincomalee </a>
+					<a href="kandy.html"> Kandy </a>
+					<a href="anura.html"> Anuradhapuraya </a>
+                </div> 			
+			</li>  
+            <li><a href="camping.html"> CAMPING</a> </li>
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+        <hr class="horizontalLine">   
+    </div>	
+    <br><br><br><br>
+	<video width="400" autoplay muted loop>
+  <source src="nuwaraeliya.mp4" type="video/mp4">
+</video>
+<br><br><br><br>
+
+    <div class="content">
+
+
+       
+	    <h1><font face="cambria" color="Black" size="10"><center>Welcome to Nuwara Eliya </center></font></h1><br><br>
+	
+	    <table align="center" style="width:70%">
+	        <tr>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;"> W15 Lake Gregory</h2>
+	                    <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+	                         Situated in Nuwara Eliya, 1.6 km from Gregory Lake, W15 Lake Gregory features accommodation with a garden, free private parking, a shared lounge and a terrace. Boasting a concierge service, this property also provides guests with a barbecue. The accommodation offers a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.
+
+
+	                    </p>
+	
+	                    <img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	                    <p>
+	                        <button class="block" onclick="document.location='w15.html'">V I S I T</button>
+	                    </p>
+	                    <br><br>
+	            </td>
+
+	            <td style="width:10%"> </td>
+	            <td>
+	                <img id="bor" src="Cinn3.jpg" alt="Yala-Safari-Camping" height="200" width="400">
+	                <br><br>
+	            </td>
+            </tr>
+
+            <tr>
+	            <td>
+	                <img id="bor" src="Atulya3.jpg" alt="mahoora-yala" height="200" width="400">
+	                <br><br>
+	            </td>
+	            <td style="width:10%"></td>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;"> Atulya Villas Nuwara Eliya
+ </h2>
+	                <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+					  Located in Nuwara Eliya, 2 km from Gregory Lake, Atulya Villas Nuwara Eliya provides accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge. Featuring room service, this property also provides guests with a barbecue. The resort features pool views, a terrace, a 24-hour front desk, and free WiFi is available
+
+
+                    </p>
+	                <img src="half-stars.jpg" alt="half-stars" width="110" height="50">
+	                <p>
+	                    <button class="block" onclick="document.location='atulya.html'">V I S I T</button>
+	                </p>
+	               <br><br>
+	            </td>
+            </tr>
+
+            <tr>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;">The Rosedale Grand Bungalow Nuwara Eliya</h2>
+	                <p style="font-family: Arial, sans-serif; line-height: 1.5;">Situated in Nuwara Eliya, 1.8 km from Gregory Lake, The Rosedale Grand Bungalow Nuwara Eliya features accommodation with a garden, free private parking, a terrace and a restaurant. Among the facilities at this property are room service and a 24-hour front desk, along with free WiFi throughout the property.
+
+                    </p>
+                    <img src="four-stars.jpg" alt="four-stars" width="100" height="25">
+	                <p>
+	                <button class="block" onclick="document.location='rose.html'">V I S I T</button>
+	                </p>
+	                <br><br>
+	            </td>
+	            <td style="width:10%"></td>
+	            <td>
+	                <img id="bor" src="Rose2.jpg" alt="big-game-camp" height="200" width="400">
+	                <br><br>
+	            </td>
+            </tr>
+	
+	        <tr>
+	            <td>
+	                <img id="bor" src="Ramp3.jpg" alt="wild-glamping-galoya" height="200" width="400">
+	                <br><br>
+	            </td>
+	            <td style="width:10%"></td>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;"> The Ramp
+ </h2>
+	                    <p style="font-family: Arial, sans-serif; line-height: 1.5;">Located in Nuwara Eliya, 2.4 km from Gregory Lake, The Ramp provides accommodation with a garden, free private parking, a shared lounge and a terrace. Conveniently situated in the Nuwara Eliya City Centre district, this hotel is situated 9.2 km from Hakgala Botanical Garden. The accommodation features a 24-hour front desk, a shuttle service, room service and free WiFi
+
+
+                        </p>
+                    <img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	                <p>
+	                    <button class="block" onclick="document.location='ramp.html'">V I S I T</button>
+	                </p>
+	                <br><br>
+	           </td>
+               </tr>
+			   
+			    <tr>
+	                <td>
+	                    <h2 style="font-family: Arial, sans-serif;">The Grand Hotel - Heritage Grand
+ </h2>
+	                        <p style="font-family: Arial, sans-serif; line-height: 1.5;">The Grand Hotel is situated on Nuwara Eliya Hill, adjacent to the Nuwara Eliya Golf Course. Surrounded by tropical greenery and enjoying cool climates, it features 2 restaurants, a shopping arcade and a gym.
+
+Rooms at Grand Hotel are equipped with heating. Each room has satellite TV, a mini fridge, and tea/coffee making facilities. The private bathroom offers a hot shower and a hairdryer.
+                                <img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	                        <p>
+	                            <button class="block" onclick="document.location='grand.html'">V I S I T</button>
+	                        </p>
+	                        <br><br>
+	                </td>
+	                <td style="width:10%"></td>
+	                <td>
+	                    <img id="bor" src="Hert1.jpg" alt="wilpattu-safari-camp" height="200" width="400">
+	                    <br><br>
+	                </td>
+                </tr>
+	</div>
+    <br><br>
+
+    <div style = "foot2">
+        <table>
+			 <hr style = "background-color:#f4cc27; height:0.5%;">
+            <tr>
+			    <td> <a href = "welcome.html"><img src = "logo.jpg" alt = "Logo Image" style = "margin-left:50px;"><a/> </td>
+                <td> <a href = "welcome.html" class = "ft" style = "margin-left : 160px;"> Home <a/> </td>
+                <td> <a href = "welcome.html#about" class = "ft" style = "margin-left : 50px;"> About Us <a/> </td>		
+                <td> <a href = "services.html" class = "ft" style = "margin-left : 50px;"> Contact Us <a/> </td>
+                <td> <a href = "" class = "ft" style = "margin-left : 50px;"> Services <a/> </td>
+                <td> 
+
+				    <a href = "" class = "ft"> <img src = "whatsapp.jpg" alt = "whatsapp Image" class = "whatsapp" style = "margin-right:-10px; margin-left:80px;"> <a/> 
+				    <a href = "" class = "ft"> <img src = "fb.jpg" alt = "Facebook Image" class = "fb" style = "margin-right:-10px;"> <a/>
+				    <a href = "" class = "ft"> <img src = "twit.jpg" alt = "Twitter Image" class = "twit"> <a/>
+				
+				</td>				
+			</td>
+		</table>		
+        <hr style = "background-color:#f4cc27; height:0.5%;"> 
+		<p align = "center">Copyright © 2024 All Rights Reserved by Roam Lanka</p>
+	</div>	
+	
+</body>
+</html>

@@ -1,0 +1,439 @@
+<html>
+<head>
+    <title> Roam Lanka </title>
+        <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <style>
+        .navigation {
+            height: 10%;
+            width: 100%;
+            background-color: inherit;
+            margin-top: -1px;
+			background-position:fixed;
+			font-size: 20px;
+        }
+
+        .content {
+            height: 80%;
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+        }
+		
+        .foot{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:90px;		    
+		}
+		
+		.foot2{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:100px;			
+		}
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+        
+        }
+
+        li {
+            display: block;
+            float: right;
+            margin-right: 4%;
+            font-weight: bold;
+            position: relative; 
+        }
+
+        .dropdown-content {
+		    margin-top:1px;
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0);
+            z-index: 1;
+            transform: translateX(0%);
+			border-radius:10px;
+            
+        }	
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: ;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:hover {
+            color: #85b453;
+            		
+        }
+
+        .horizontalLine {
+            background-color: #f4cc27; 
+            height: 5%;			
+           
+            margin-top:5px;			
+        }
+		
+		.logo{
+		    width : 105;
+            height : 105;
+        	
+		}
+		
+		.viewd,
+		.offers,
+		.trending{
+            display: block;
+            width: 98%;
+			height : 100%;
+            background-color: #f4cc27 ;
+			color : black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+		    border:none;
+			margin-left:45px;
+		}
+		
+		.viewd:hover,
+		.offers:hover,
+		.trending:hover{
+            cursor: pointer;
+            background-color: white;
+			border:2px solid #198238;
+			
+		}
+
+		.visit{
+            display: block;
+            width: 30%;
+            border: none;
+            background-color:  #B0621F;
+            color: white;
+            padding: 7px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+			margin-left:245px;
+			margin-top: -33px;
+		}
+		
+
+		.visit:hover{
+            cursor: pointer;
+            background-color: #f4cc27;
+			color:black;
+		}	
+ 
+        .ft{
+		    margin-right: 20px; 
+			font-size:23px;
+		} 
+		
+		.whatsapp,
+		.fb,
+		.twit{
+		    border-radius : 50px;
+            		
+		}
+
+		.whatsapp,
+		.twit,
+		.fb{
+		            width : 50px ;
+					height : 50px ;			
+		}
+
+		
+		.whatsapp:hover,
+		.fb:hover,
+		.twit:hover{
+		            width : 40px ;
+					height : 40px ;
+                    border: 2px solid #000000;					
+		}		
+		
+        .heart{
+
+		    margin-left : 50px; 
+		}
+		
+        .heart1{
+
+		    margin-left : 100px; 
+		}	
+
+		.text-overlay {
+            position: absolute;
+            top: 85%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100px;
+            text-align: left;
+
+        }	
+		
+		.buttonWish{
+		    position:absolute; 
+			left:19%; 
+			width:35px; 
+			height:33px; 
+			background-color:rgba(0,0,0,0); 
+			border : none; 
+			cursor:pointer;
+		}
+    </style>   
+
+    <script>
+        function load(){
+		    alert("Welcome to ROAM LANKA....");
+		} 
+		
+        function leave(){
+		    var ans = confirm("Are you sye want to leave the page!");
+		    if(ans){
+			    alert("Thank you. Have a wonderfull day!");  
+			}else{
+			    alert("Thank you to sticking with us...");
+			} 
+		}
+
+        function addtoWishList(){
+            var img = document.getElementById("heart1");
+            
+            if(img.src.includes("redheart.png")){
+			    img.src = "whiteheart.png" 
+			}else{
+			    img.src = "redheart.png";
+			}		
+        }		
+	</script>	
+</head>
+<body onload = "load()" onunload = "leave()">
+   <div class="navigation">
+	    <div style = "margin-bottom:-50px;">
+            <a href="welcome.html"><img src = "logo.jpg" alt = "Logo Image" class = "logo" width = 125px height = 105px style = "margin-left:20px;"></a>  	
+	    </div>
+        <ul>  
+            <li style="margin-right:0px;"><a href="sign in.html">SIGN IN</a></li>
+            <li><a href="sign up.html">SIGN UP</a></li>
+            <li>
+			    <a>SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="welcome.html#about" style = "margin-top : 30px;"> About Us </a>
+                    <a href="services.html"> Contact Us </a>
+                    <a href="services.html#contact"> Q&A </a>
+                </div> 			
+			</li>
+            <li>
+			<a>TRANSPORTATION</a>
+			    <div class="dropdown-content">
+                    <a href="train.html" style = "margin-top : 30px;"> Train  </a>
+                    <a href="taxi.html"> Taxi </a>
+					<a href="rental.html"> Rental </a>
+                </div>			
+			</li>            
+			<li>
+			    <a>RESORTS</a>
+                <div class="dropdown-content">
+                   
+                    <a href="nuwaraEliya.html" style = "margin-top : 30px;"> Nuwara Eliya </a>
+                    <a href="galle.html"> Galle </a>
+                    <a href="trinco.html"> Trincomalee </a>
+					<a href="kandy.html"> Kandy </a>
+					<a href="anura.html"> Anuradhapuraya </a>
+                </div> 			
+			</li>  
+            <li><a href="camping.html"> CAMPING</a> </li>
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+        <hr class="horizontalLine">   
+    </div>	
+    
+    <div class="content">
+        <br><br>
+        <video width="1500" autoplay muted style = "margin-top:30px;">
+            <source src="srilanka.mp4" type="video/mp4">  hi
+        </video>
+		
+		<div class="text-overlay">
+	        <p>WELCOME TO <br> SRI LANKA.</p>
+	    </div>
+		
+	    <br><br>
+	    <hr style = "background-color:#f4cc27; height:0.8%;"> 
+        <font style = "font-size:60px; margin-left:10px; color:#919191; "> Resorts </font>     
+		
+        <div style = " overflow-x:auto; white-space: nowrap;">	 
+		    <table style = "margin-top:-30px;">
+		        <tr>
+                    <td>
+				        <input type = "button" value = "Most Reviewed" class = "viewd" id = "viewd"> <br><br>
+					    <input type = "button" value = "Spcial Offers" class = "offers"> <br><br>
+			            <input type = "button" value = "Trending Places" class = "trending"> <br><br>
+				    </td> 
+				    <td> 
+				        <img src = "kandy.jpg" alt = "Kandy Image" style="margin-left:100px; margin-top:55px;" ><br><br>
+					    <font style = "font-size:20px; margin-left:100px;"> Kandy </font><br><br>
+					    <input type = "button" onclick = "addtoWishList()" class = "buttonWish"><img src = "whiteheart.png" alt = "Add to Wish" class = "heart1" id = "heart1"></button>
+						<a href="kandy.html">
+						<input type = "button" value = "Visit" class = "visit" id = "visit" style = "margin-left:280px;">
+						</a><br>
+				    </td> 
+				    <td>
+				        <img src = "galle.jpg" alt = "galle Image" style="margin-left:50px; margin-top:55px;" ><br><br>
+					    <font style = "font-size:20px; margin-left:50px;"> Galle </font><br><br>
+					    <img src = "whiteheart.png" alt = "Add to Wish" class = "heart">
+						<a href="galle.html">
+						<input type = "button" value = "Visit" class = "visit" id = "visit">
+						</a><br>				
+				    </td> 
+				    <td>
+				        <img src = "nuwaraEliya.jpg" alt = "Nuwara Eliya Image" style="margin-left:50px; margin-top:55px;" ><br><br>
+					    <font style = "font-size:20px; margin-left:50px;"> Nuwara Eliya </font><br><br>
+					    <img src = "whiteheart.png" alt = "Add to Wish" class = "heart">
+						<a href="nuwaraEliya.html">
+						<input type = "button" value = "Visit" class = "visit" id = "visit">
+						</a><br>				
+				    </td> 
+				    <td>
+				        <img src = "beach.jpg" alt = "Beacha Image" style="margin-left:50px; margin-top:55px;" ><br><br>
+					    <font style = "font-size:20px; margin-left:50px;"> Trincomalee </font><br><br>
+					    <img src = "whiteheart.png" alt = "Add to Wish" class = "heart">
+						<a href="trinco.html">
+						<input type = "button" value = "Visit" class = "visit" id = "visit">
+						</a><br>				
+				    </td>				
+			    </tr>			
+		    </table>
+		</div>
+		
+		
+	    <br><br>
+	    <hr style = "background-color:#f4cc27; height:0.8%;"> 
+	    <font style = "font-size:60px; margin-left:10px; color:#919191;"> Camping Sites </font>
+		<div style = " overflow-x:auto; white-space: nowrap;">
+		<table style = "margin-top:-30px;">
+		    <tr>
+                <td>
+
+				    <input type = "button" value = "Most Reviewed" class = "viewd" id = "viewd" > <br><br>
+					<input type = "button" value = "Spcial Offers" class = "offers" > <br><br>
+			        <input type = "button" value = "Trending Places" class = "trending"> <br><br>
+				</td> 
+				<td> 
+				    <img src = "Blue3.jpg"  width="300" height="200" alt = "Kandy Image" style="margin-left:100px; margin-top:55px;" ><br><br>
+					<font style = "font-size:20px; margin-left:100px;"> Beach Bunglow Yala </font><br><br>
+					<img src = "whiteheart.png" alt = "Add to Wish" class = "heart1">
+					<a href="https://www.beachbungalowkirinda.com/">
+					<input type = "button" value = "Visit" class = "visit" id = "visit" style = "margin-left:280px;">
+					</a><br>								
+				</td> 
+				<td>
+				<img src = "wall4.jpg" width="300" height="200" alt = "galle Image" style="margin-left:50px; margin-top:55px;" ><br><br>
+					<font style = "font-size:20px; margin-left:50px;"> Turtle Wood Cabin </font><br><br>
+					<img src = "whiteheart.png" alt = "Add to Wish" class = "heart">
+					<a href="https://www.lodging-world.com/ce/hotels/turtle-wood-cabin-in-tangalle-99977309">
+					<input type = "button" value = "Visit" class = "visit" id = "visit">
+					</a><br>			
+     			</td> 
+				<td>
+				<img src = "wall3.jpg"  width="300" height="200" alt = "Nuwara Eliya Image" style="margin-left:50px; margin-top:55px;" ><br><br>
+					<font style = "font-size:20px; margin-left:50px;"> Yala National Park </font><br><br>
+					<img src = "whiteheart.png" alt = "Add to Wish" class = "heart">
+					<a href="https://www.yalasrilanka.lk/">
+					<input type = "button" value = "Visit" class = "visit" id = "visit">
+					</a><br>				
+				</td> 
+				<td>
+				<img src = "wall5.jpg"  width="300" height="200" alt = "Beacha Image" style="margin-left:50px; margin-top:55px;" ><br><br>
+					<font style = "font-size:20px; margin-left:50px;"> Hortan Plains National Park </font><br><br>
+					<img src = "whiteheart.png" alt = "Add to Wish" class = "heart">
+					<a href="https://en.wikipedia.org/wiki/Horton_Plains_National_Park">
+					<input type = "button" value = "Visit" class = "visit" id = "visit">
+					</a><br>				
+				</td>				
+			</tr>			
+		</table>
+	</div>
+	
+	<div id="about" class = "foot">
+	    <table>
+	        <tr>
+		        <td> <font style = "font-size:50px; margin-left:50px; margin-right:50px; color:#85b453;"> Mission </font></td>
+                <td>
+			        				
+<pre><font size = 5px style = "font-family: Brush Script MT, cursive, sans-serif ;">
+To empower travelers by providing a seamless and intuitive
+online platform that connects them with a diverse range of
+accommodations and experiences worldwide. We strive to sim
+plify the travel booking process, offering a comprehensive 
+and reliable solution that enhances the journeyfrom planni
+-ng to stay. </pre>
+				</td>
+            
+			    <td> <font style = "font-size:50px; margin-left:70px; margin-right:50px; color:#85b453;"> Vision </font></td>
+				<td>
+<pre><font size = 5px style = "font-family: Brush Script MT, cursive, sans-serif ;	">
+Our vision is to be the preferred global travel companion
+inspiring individuals to explorethe world with confidence
+,and excitement. We aim to continuously innovate, leveragi
+-ng technology to create a personalized and unforgettable ,
+travel experience for every user. By fostering partnerships
+and maintaining thehighest standards, we envision becoming
+the go-to destination for travelers seeking convenience, choice,
+ and unparalleled service. </pre>
+				</td>			
+		    </tr> 
+	    </table>
+	</div>
+    <br><br>
+    <div style = "foot2">
+        <table>
+			 <hr style = "background-color:#f4cc27; height:0.5%;">
+            <tr>
+			    <td> <a href = "welcome.html"><img src = "logo.jpg" alt = "Logo Image" style = "margin-left:50px;"><a/> </td>
+                <td> <a href = "welcome.html" class = "ft" style = "margin-left : 160px;"> Home <a/> </td>
+                <td> <a href = "welcome.html#about" class = "ft" style = "margin-left : 50px;"> About Us <a/> </td>		
+                <td> <a href = "services.html" class = "ft" style = "margin-left : 50px;"> Contact Us <a/> </td>
+                <td> <a href = "" class = "ft" style = "margin-left : 50px;"> Services <a/> </td>
+                <td> 
+
+				    <a href = "" class = "ft"> <img src = "whatsapp.jpg" alt = "whatsapp Image" class = "whatsapp" style = "margin-right:-10px; margin-left:80px;"> <a/> 
+				    <a href = "" class = "ft"> <img src = "fb.jpg" alt = "Facebook Image" class = "fb" style = "margin-right:-10px;"> <a/>
+				    <a href = "" class = "ft"> <img src = "twit.jpg" alt = "Twitter Image" class = "twit"> <a/>
+				
+				</td>				
+			</td>
+		</table>		
+        <hr style = "background-color:#f4cc27; height:0.5%;"> 
+		<p align = "center">Copyright © 2024 All Rights Reserved by Roam Lanka</p>
+	</div>	
+	</div>
+	
+
+  	
+</body>
+</html>

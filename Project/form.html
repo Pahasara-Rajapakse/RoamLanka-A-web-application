@@ -1,0 +1,588 @@
+<html>
+<head>
+<Title>Form</Title>
+<link rel="icon" type="image/x-icon" href="icon.png">
+<style>
+.bl {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bl:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.space {
+	padding: 14px 28px;
+}
+
+.sub {
+  display: block;
+  width: 56%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sub:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ 
+
+#button2 {border-radius: 15px;}	
+
+
+ .navigation {
+            height: 10%;
+            width: 100%;
+            background-color: inherit;
+            margin-top: -1px;
+			background-position:fixed;
+			font-size: 20px;
+        }
+
+        .content {
+            height: 80%;
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+        }
+		
+		.foot2{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:150px;			
+		}
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+        
+        }
+
+        li {
+            display: block;
+            float: right;
+            margin-right: 4%;
+            font-weight: bold;
+            position: relative; 
+        }
+
+        .dropdown-content {
+		    margin-top:1px;
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0);
+            z-index: 1;
+            transform: translateX(0%);
+			border-radius:10px;
+            
+        }	
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: ;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:hover {
+            color: #85b453; 
+        }
+
+        .horizontalLine {
+            background-color: #f4cc27; 
+            height: 5%;			
+           
+            margin-top:5px;			
+        }
+		
+		.logo{
+		    width : 105;
+            height : 105;
+        	
+		}
+		
+		.viewd,
+		.offers,
+		.trending{
+            display: block;
+            width: 98%;
+			height : 100%;
+            background-color: #f4cc27 ;
+			color : black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+		    border:none;
+			margin-left:45px;
+		}
+		
+		.viewd:hover,
+		.offers:hover,
+		.trending:hover{
+            cursor: pointer;
+            background-color: white;
+			border:2px solid #198238;
+			
+		}
+
+		.visit{
+            display: block;
+            width: 30%;
+            border: none;
+            background-color:  #B0621F;
+            color: white;
+            padding: 7px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+			margin-left:245px;
+			margin-top: -33px;
+		}
+		
+
+		.visit:hover{
+            cursor: pointer;
+            background-color: #f4cc27;
+			color:black;
+		}	
+ 
+        .ft{
+		    margin-right: 20px; 
+			font-size:23px;
+		} 
+		
+		.whatsapp,
+		.fb,
+		.twit{
+		    border-radius : 50px;
+            		
+		}
+
+		.whatsapp,
+		.twit,
+		.fb{
+		            width : 50px ;
+					height : 50px ;			
+		}
+
+		
+		.whatsapp:hover,
+		.fb:hover,
+		.twit:hover{
+		            width : 40px ;
+					height : 40px ;
+                    border: 2px solid #000000;					
+		}		
+		
+        .heart{
+
+		    margin-left : 50px; 
+		}
+		
+        .heart1{
+
+		    margin-left : 100px; 
+		}	
+
+		.text-overlay {
+            position: absolute;
+            top: 85%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100px;
+            text-align: left;
+
+        }	
+		
+		.buttonWish{
+		    position:absolute; 
+			left:19%; 
+			width:35px; 
+			height:33px; 
+			background-color:rgba(0,0,0,0); 
+			border : none; 
+			cursor:pointer;
+		}
+		
+		#bor{
+	border-radius:50%;
+	width:400px;
+	height:400px;
+}
+	
+</style>
+<script src="form.js" defer></script>
+</head>
+<body>
+
+<div class="navigation">
+	    <div style = "margin-bottom:-50px;">
+            <a href="welcome.html"><img src = "logo.jpg" alt = "Logo Image" class = "logo" width = 125px height = 105px style = "margin-left:20px;"></a>  	
+	    </div>
+        <ul>  
+            <li style="margin-right:0px;"><a href="sign in.html">SIGN IN</a></li>
+            <li><a href="sign up.html">SIGN UP</a></li>
+            <li>
+			    <a>SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="welcome.html#about" style = "margin-top : 30px;"> About Us </a>
+                    <a href="services.html"> Contact Us </a>
+                    <a href="services.html#contact"> Q&A </a>
+                </div> 			
+			</li>
+            <li>
+			<a>TRANSPORTATION</a>
+			    <div class="dropdown-content">
+                    <a href="train.html" style = "margin-top : 30px;"> Train  </a>
+                    <a href="taxi.html"> Taxi </a>
+					<a href="rental.html"> Rental </a>
+                </div>			
+			</li>            
+			<li>
+			    <a>RESORTS</a>
+                <div class="dropdown-content">
+                   
+                    <a href="nuwaraEliya.html" style = "margin-top : 30px;"> Nuwara Eliya </a>
+                    <a href="galle.html"> Galle </a>
+                    <a href="trinco.html"> Trincomalee </a>
+					<a href="kandy.html"> Kandy </a>
+					<a href="anura.html"> Anuradhapuraya </a>
+                </div> 			
+			</li>  
+            <li><a href="camping.html"> CAMPING</a> </li>
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+        <hr class="horizontalLine">   
+    </div>
+	
+	
+	
+<br><br><br><br>
+<img src="img.jpg" alt="hotel" width="100%" height="600">
+		
+<br>
+	<hr>
+<h1 style="text-align: center;">Reservation Form</h1>
+<h3 style="text-align: center; color:#808080;">Please Complete the form below</h3>
+<br>
+<h3 style="text-align: center;color:#899499;">Your registration will be verfied prior to your arrival</h3>
+<br>
+<table onsubmit="return validateForm()">
+<form  action="insertData.php" method="POST">
+<tr>
+<td>
+	<label for="destination"><b>Destination</b></label><br><br>
+        <select class="space" id="destination" name="destination" required onclick="return validateForm()">
+            <option value="yala">Yala Safari Camping</option>
+            <option value="mahoora">Mahoora Tented Safari Camp-Yala</option>
+			<option value="big">Big Game Camp-Yala</option>
+			<option value="wild">Wild Glamping-Gal Oya</option>
+            <option value="wilpattu">Wilpattu Safari Camp</option>
+			<option value="kulu">Kulu Safaris-Yala</option>
+			<option value="leopard">Leopard Trails-Yala</option>
+            <option value="athgira">Athgira River Camp-Udawalawa</option>
+			<option value="ceylon">Ceylon Wild Safari-Yala</option>
+			<option value="tree">Tree Tops Jungle Lodge-Buttala</option>
+        </select><br><br>
+</td>
+</tr>
+<tr>
+	<td><label for="name"><b>Full Name</b></label></td>
+</tr>
+<tr>
+<td>
+<br>
+	<input class="space" type="text" id="name" name="name" size="50" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">First Name</p>
+</td>
+<td>
+<br>
+	<input class="space" type="text" id="lname" name="lname" size="50" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">Last Name</p>
+</td>
+</tr>
+<tr>
+	<td>
+	<br><br>
+	<label for="address"><b>Address</b></label>
+	</td>
+</tr>
+<tr>
+<td>
+<br>
+	<input class="space" type="text" id="s1" name="s1" size="100" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">Street Address Line 1</p><br>
+</td>
+</tr>
+<tr>
+	<td>
+	<input class="space" type="text" id="s2" name="s2" size="100" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">Street Address Line 2</p><br>
+	</td>
+</tr>
+<tr>
+<td>
+	<input class="space" type="text" id="ci" name="ci" size="50" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">City</p>
+</td>
+<td>
+	<input class="space" type="text" id="st" name="st" size="50" onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">State/Province</p>
+</td>
+</tr>
+<tr>
+	<td>
+	<br>
+	<input class="space" type="text" id="po" name="po" size="100" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">Country</p><br>
+	</td>
+</tr>
+<tr>
+	<td>
+	<br>
+	<label for="pn"><b>Phone Number</b></label>
+	</td>
+	<td>
+	<br>
+	<label for="email"><b>Email</b></label>
+	</td>
+</tr>
+<tr>
+<td>
+<br>
+	<input class="space" type="tel" id="name" name="name" size="50" placeholder="(000) 000-0000" required onclick="return validateForm()"><br>
+</td>
+<td>
+<br>
+	<input class="space" type="email" id="lname" name="lname" size="50"  placeholder="example@example.com" required onclick="return validateForm()"><br>
+</td>
+</tr>
+<tr>
+	<td>
+	<br><br>
+	<label for="arri"><b>Arrival-Date and Time</b></label>
+	</td>
+</tr>
+<tr>
+	<td>
+	<br>
+	<input class="space" type="date" id="arrival-date" name="arrival-date" size="50" required onclick="return validateForm()">
+	<p style="color: #B2BEB5;">Date</p>
+	</td>
+	
+	<td>
+	<br>
+	<input class="space" type="time" id="time" name="time" size="50" required onclick="return validateForm()">
+	<p style="color: #B2BEB5;">Hour and Minutes</p>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<br><br>
+	<label for="dept"><b>Depature-Date and Time</b></label>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<br>
+	<input class="space" type="date" id="dep-date" name="dep-date" size="50" required onclick="return validateForm()">
+	<p style="color: #B2BEB5;">Date</p>
+	</td>
+	
+	<td>
+	<br>
+	<input class="space" type="time" id="time2" name="time2" size="50" required onclick="return validateForm()">
+	<p style="color: #B2BEB5;">Hour and Minutes</p>
+	</td>
+</tr>
+<tr>
+<td>
+	<br><br>
+	<label for="guest"><b>Information of Guests</b></label>
+	</td>
+</tr>
+<tr>
+<td>
+<br>
+	<input class="space" type="number" id="adu" name="adu" size="50" placeholder="ex: 23" required onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">Number of Adults</p>
+</td>
+<td>
+<br>
+	<input class="space" type="number" id="ch" name="ch" size="50" placeholder="ex: 23" onclick="return validateForm()"><br>
+	<p style="color: #B2BEB5;">Number of Kids (If there are any)</p>
+</td>
+</tr>
+<tr>
+<td>
+	<br><br>
+	<label for="rt"><b>Room Type</b></label>
+	</td>
+	<td>
+	<br><br>
+	<label for="rn"><b>Rooms Needed</b></label>
+	</td>
+</tr>
+<tr>
+	<td>
+	<br>
+	<input type="checkbox" id="ac1" name="ac1" value="acroom1" onclick="return validateForm()">
+	<label for="acr1">A/C Single Room</label>
+	</td>
+	<td>
+	<br>
+	<input class="space" type="number" id="ad" name="ad" size="50">
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<br>
+	<input type="checkbox" id="ac2" name="ac2" value="acroom2" onclick="return validateForm()">
+	<label for="acr2">A/C Double Room</label>
+	</td>
+	<td>
+	<br>
+	<input class="space" type="number" id="ad" name="ad" size="50" onclick="return validateForm()">
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<br>
+	<input type="checkbox" id="nonac1" name="nonac1" value="nonacroom1" onclick="return validateForm()">
+	<label for="nonacr1">Non A/C Single Room</label>
+	</td>
+	<td>
+	<br>
+	<input class="space" type="number" id="ad" name="ad" size="50">
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<br>
+	<input type="checkbox" id="nonac2" name="nonac2" value="nonacroom2" onclick="return validateForm()">
+	<label for="nonacr2">Non A/C Double Room</label><br>
+	</td>
+	<td>
+	<br>
+	<input class="space" type="number" id="ad" name="ad" size="50">
+	</td>
+</tr>
+
+<tr>
+<td>
+	<br><br>
+	<label for="payment"><b>Payment Method</b></label>
+	</td>
+</tr>
+
+<tr>
+<td>
+<br>
+    <input type="radio" id="credit-card" name="payment-method" value="credit-card" required onclick="return validateForm()">
+    <label for="credit-card">Credit Card</label>
+</td>
+<td>
+<br>
+    <input type="radio" id="paypal" name="payment-method" value="paypal" required onclick="return validateForm()">
+    <label for="paypal">PayPal</label>
+</td>
+</tr>
+
+<tr>
+<td>
+	<br><br>
+	<label for="comment"><b>Do you have any special requests?</b></label>
+	</td>
+</tr>
+
+<tr>
+<td>
+<br>
+	<textarea id="comm" name="comm" rows="10" cols="70">Type here...</textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<br><br>
+	<input id="submit" class="sub" type="submit" value="Submit">
+</td>
+
+<td>
+<br><br>
+	<input id="button2" class="bl" type="reset" value="Clear" >
+</td>
+</tr>	
+	
+</form>
+</table>
+
+
+<div style = "foot2">
+        <table>
+			 <hr style = "background-color:#f4cc27; height:0.5%;">
+            <tr>
+			    <td> <a href = "welcome.html"><img src = "logo.jpg" alt = "Logo Image" style = "margin-left:50px;"><a/> </td>
+                <td> <a href = "welcome.html" class = "ft" style = "margin-left : 160px;"> Home <a/> </td>
+                <td> <a href = "welcome.html#about" class = "ft" style = "margin-left : 50px;"> About Us <a/> </td>		
+                <td> <a href = "services.html" class = "ft" style = "margin-left : 50px;"> Contact Us <a/> </td>
+                <td> <a href = "" class = "ft" style = "margin-left : 50px;"> Services <a/> </td>
+                <td> 
+
+				    <a href = "" class = "ft"> <img src = "whatsapp.jpg" alt = "whatsapp Image" class = "whatsapp" style = "margin-right:-10px; margin-left:80px;"> <a/> 
+				    <a href = "" class = "ft"> <img src = "fb.jpg" alt = "Facebook Image" class = "fb" style = "margin-right:-10px;"> <a/>
+				    <a href = "" class = "ft"> <img src = "twit.jpg" alt = "Twitter Image" class = "twit"> <a/>
+				
+				</td>				
+			</td>
+		</table>		
+        <hr style = "background-color:#f4cc27; height:0.5%;"> 
+		<p align = "center">Copyright © 2024 All Rights Reserved by Roam Lanka</p>
+	</div>	
+
+
+</body>
+</html>

@@ -1,0 +1,537 @@
+<html>
+<head>
+<Title>Camping</Title>
+<link rel="icon" type="image/x-icon" href="icon.png">
+<style>
+
+#bor{
+	border-radius:50%;
+	width:400px;
+	height:400px;
+}
+
+
+.block {
+  width: 30%;
+  border: none;
+  background-color: #f4cc27;
+  color: black;
+  padding: 6px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+#text-overlay {
+      position: absolute;
+      top: 90%;
+      left: 40%;
+      transform: translate(-70%, -80%);
+      color: white;
+      font-size: 50px;
+      text-align: left;
+    }
+	
+	
+ .navigation {
+            height: 10%;
+            width: 100%;
+            background-color: inherit;
+            margin-top: -1px;
+			background-position:fixed;
+			font-size: 20px;
+        }
+
+        .content {
+            height: 80%;
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+        }
+		
+		.foot2{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:150px;			
+		}
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+        
+        }
+
+        li {
+            display: block;
+            float: right;
+            margin-right: 4%;
+            font-weight: bold;
+            position: relative; 
+        }
+
+        .dropdown-content {
+		    margin-top:1px;
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0);
+            z-index: 1;
+            transform: translateX(0%);
+			border-radius:10px;
+            
+        }	
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: ;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:hover {
+            color: #85b453; 
+        }
+
+        .horizontalLine {
+            background-color: #f4cc27; 
+            height: 5%;			
+           
+            margin-top:5px;			
+        }
+		
+		.logo{
+		    width : 105;
+            height : 105;
+        	
+		}
+		
+		.viewd,
+		.offers,
+		.trending{
+            display: block;
+            width: 98%;
+			height : 100%;
+            background-color: #f4cc27 ;
+			color : black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+		    border:none;
+			margin-left:45px;
+		}
+		
+		.viewd:hover,
+		.offers:hover,
+		.trending:hover{
+            cursor: pointer;
+            background-color: white;
+			border:2px solid #198238;
+			
+		}
+
+		.visit{
+            display: block;
+            width: 30%;
+            border: none;
+            background-color:  #B0621F;
+            color: white;
+            padding: 7px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+			margin-left:245px;
+			margin-top: -33px;
+		}
+		
+
+		.visit:hover{
+            cursor: pointer;
+            background-color: #f4cc27;
+			color:black;
+		}	
+ 
+        .ft{
+		    margin-right: 20px; 
+			font-size:23px;
+		} 
+		
+		.whatsapp,
+		.fb,
+		.twit{
+		    border-radius : 50px;
+            		
+		}
+
+		.whatsapp,
+		.twit,
+		.fb{
+		            width : 50px ;
+					height : 50px ;			
+		}
+
+		
+		.whatsapp:hover,
+		.fb:hover,
+		.twit:hover{
+		            width : 40px ;
+					height : 40px ;
+                    border: 2px solid #000000;					
+		}		
+		
+        .heart{
+
+		    margin-left : 50px; 
+		}
+		
+        .heart1{
+
+		    margin-left : 100px; 
+		}	
+
+		.text-overlay {
+            position: absolute;
+            top: 85%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100px;
+            text-align: left;
+
+        }	
+		
+		.buttonWish{
+		    position:absolute; 
+			left:19%; 
+			width:35px; 
+			height:33px; 
+			background-color:rgba(0,0,0,0); 
+			border : none; 
+			cursor:pointer;
+		}
+		
+		#bor{
+	border-radius:50%;
+	width:400px;
+	height:400px;
+}
+
+</style>
+</head>
+<body>
+
+
+ <div class="navigation">
+	    <div style = "margin-bottom:-50px;">
+            <a href="welcome.html"><img src = "logo.jpg" alt = "Logo Image" class = "logo" width = 125px height = 105px style = "margin-left:20px;"></a>  	
+	    </div>
+        <ul>  
+            <li style="margin-right:0px;"><a href="sign in.html">SIGN IN</a></li>
+            <li><a href="sign up.html">SIGN UP</a></li>
+            <li>
+			    <a>SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="welcome.html#about" style = "margin-top : 30px;"> About Us </a>
+                    <a href="services.html"> Contact Us </a>
+                    <a href="services.html#contact"> Q&A </a>
+                </div> 			
+			</li>
+            <li>
+			<a>TRANSPORTATION</a>
+			    <div class="dropdown-content">
+                    <a href="train.html" style = "margin-top : 30px;"> Train  </a>
+                    <a href="taxi.html"> Taxi </a>
+					<a href="rental.html"> Rental </a>
+                </div>			
+			</li>            
+			<li>
+			    <a>RESORTS</a>
+                <div class="dropdown-content">
+                   
+                    <a href="nuwaraEliya.html" style = "margin-top : 30px;"> Nuwara Eliya </a>
+                    <a href="galle.html"> Galle </a>
+                    <a href="trinco.html"> Trincomalee </a>
+					<a href="kandy.html"> Kandy </a>
+					<a href="anura.html"> Anuradhapuraya </a>
+                </div> 			
+			</li>  
+            <li><a href="camping.html"> CAMPING</a> </li>
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+        <hr class="horizontalLine">   
+    </div>
+	
+    <br><br><br><br>
+	
+
+
+<video width="400" autoplay muted loop>
+  <source src="camp.mp4" type="video/mp4">
+</video>
+ <div id="text-overlay">
+    <p>"Life is simpler when you're camping." <br>-Unknown-
+	</p>
+  
+  </div>
+  
+
+	<h1><font face="cambria" color="Black" size="10"><center>Welcome to Camping Sites</center></font></h1><br><br>
+	
+	<table align="center" style="width:70%">
+	<tr>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;">Yala Safari Camping</h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">
+	Get an exceptional safari experience in a fantastic campsite with all facilities located in a real wild life habitat of the buffer zone to Yala National Park.
+	</p>
+	
+	<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	<p>
+	<button class="block" onclick="document.location='yala-safari.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<img id="bor" src="Yala-Safari-Camping.jpg" alt="Yala-Safari-Camping" height="200" width="400">
+	<br><br>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<img id="bor" src="mahoora-yala.jpg" alt="mahoora-yala" height="200" width="400">
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;"> Mahoora Tented Safari Camp-Yala </h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">Mahoora Tented Safari is the ultimate experience of authentic, mobile- adventure in Sri Lankan wilderness. 
+</p>
+	<img src="half-stars.jpg" alt="half-stars" width="110" height="50">
+	<p>
+	<button class="block" onclick="document.location='mahoora.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;">Big Game Camp-Yala</h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">Experience an authentic, budget-friendly forest campout in Sri Lanka’s most iconic wildlife zones,
+on the borders of National Parks and Nature Reserves.
+</p>
+<img src="four-stars.jpg" alt="four-stars" width="100" height="25">
+	<p>
+	<button class="block" onclick="document.location='big-game.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<img id="bor" src="big-game-camp.jpg" alt="big-game-camp" height="200" width="400">
+	<br><br>
+	</td>
+</tr>
+	
+	<tr>
+	<td>
+	<img id="bor" src="wild-glamping-galoya.jpg" alt="wild-glamping-galoya" height="200" width="400">
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;"> Wild Glamping-Gal Oya </h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">Located near the prestigious Gal Oya National Park, which has been unblemished for centuries, Wild Glamping Gal Oya is stationed in "Rathugala," a majestic mountain-locked village inhabited by the Veddas — the aboriginal inhabitants of Sri Lanka.
+</p>
+<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	<p>
+	<button class="block" onclick="document.location='wild-glamping.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;">Wilpattu Safari Camp</h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">We believe that our camp will be a haven for those seeking to enjoy “A Journey through the Wild” in a quiet and unhurried way. A safari holiday designed with care, luxury comfort and intimate knowledge of the parks to allow our guests to have the best possible holiday in Wilpattu.
+</p>
+<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	<p>
+	<button class="block" onclick="document.location='wilpattu-safari.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<img id="bor" src="wilpattu-safari-camp.jpg" alt="wilpattu-safari-camp" height="200" width="400">
+	<br><br>
+	</td>
+</tr>
+
+
+	<tr>
+	<td>
+	<img id="bor" src="kulu-safari.jpg" alt="kulu-safari" height="200" width="400">
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;"> Kulu Safaris-Yala </h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">At Kulu Safaris we have been pioneering responsible tented safaris in Sri Lanka for the last two decades. Our expertise is blending the adventure of a Sri Lankan safari with exceptionally comfortable tented lodging and providing travelers with authentic and memorable wildlife experiences.
+</p>
+<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	<p>
+	<button class="block" onclick="document.location='kulu-safari.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;">Leopard Trails-Yala</h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">Leopard Trails bespoke tented safaris returns to the original spirit and true essence of safari, reminiscent of a golden era – an era of elegance, romance and adventure.
+</p>
+<img src="half-stars.jpg" alt="half-stars" width="110" height="50">
+	<p>
+	<button class="block" onclick="document.location='leopard-trails.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<img id="bor" src="leopard-trails.jpg" alt="leopard-trails" height="200" width="400">
+	<br><br>
+	</td>
+</tr>
+
+
+<tr>
+	<td>
+	<img id="bor" src="athgira-river-camp.jpg" alt="athgira-river-camp" height="200" width="400">
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;"> Athgira River Camp-Udawalawe </h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">A truly unique glimpse into the rural beauty of Udawalawe along the river banks of Rakwana River, Athgira River Camp provides more than just a satisfactory staycation to any nature enthusiast. Guests can indulge in serenity, privacy and personalized service in our luxurious eco camping adventure.
+</p>
+<img src="four-stars.jpg" alt="four-stars" width="100" height="25">
+	<p>
+	<button class="block" onclick="document.location='athgira.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+</tr>
+
+
+<tr>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;">Ceylon Wild Safari-Yala</h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">The buffer-zone jungles of Yala National Park hold a secret which until now has been hidden, but we are ready to share this secret with you and this is none other than the CWS campsite. Nestled in the buffer zone forests which border the national park, our camp will transport you into a world unlike any other.
+</p>
+<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	<p>
+	<button class="block" onclick="document.location='ceylon-wild.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<img id="bor" src="ceylon-wild-safaris.jpg" alt="ceylon-wild-safaris" height="200" width="400">
+	<br><br>
+	</td>
+</tr>
+
+
+<tr>
+	<td>
+	<img id="bor" src="tree-tops.jpg" alt="tree-tops" height="200" width="400">
+	<br><br>
+	</td>
+	<td style="width:10%">
+	</td>
+	<td>
+	<h2 style="font-family: Arial, sans-serif;"> Tree Tops Jungle Lodge-Buttala </h2>
+	<p style="font-family: Arial, sans-serif; line-height: 1.5;">Tree Tops Jungle Lodge is a small eco-camp, located in a wild habitat, on a private bush property. We offer low impact and minimalistic hotel facilities.
+</p>
+<img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	<p>
+	<button class="block" onclick="document.location='tree-tops.html'">V I S I T</button>
+	</p>
+	<br><br>
+	</td>
+</tr>
+	
+</table>
+
+
+ <br><br>
+
+   <div style = "foot2">
+        <table>
+			 <hr style = "background-color:#f4cc27; height:0.5%;">
+            <tr>
+			    <td> <a href = "welcome.html"><img src = "logo.jpg" alt = "Logo Image" style = "margin-left:50px;"><a/> </td>
+                <td> <a href = "welcome.html" class = "ft" style = "margin-left : 160px;"> Home <a/> </td>
+                <td> <a href = "welcome.html#about" class = "ft" style = "margin-left : 50px;"> About Us <a/> </td>		
+                <td> <a href = "services.html" class = "ft" style = "margin-left : 50px;"> Contact Us <a/> </td>
+                <td> <a href = "" class = "ft" style = "margin-left : 50px;"> Services <a/> </td>
+                <td> 
+
+				    <a href = "" class = "ft"> <img src = "whatsapp.jpg" alt = "whatsapp Image" class = "whatsapp" style = "margin-right:-10px; margin-left:80px;"> <a/> 
+				    <a href = "" class = "ft"> <img src = "fb.jpg" alt = "Facebook Image" class = "fb" style = "margin-right:-10px;"> <a/>
+				    <a href = "" class = "ft"> <img src = "twit.jpg" alt = "Twitter Image" class = "twit"> <a/>
+				
+				</td>				
+			</td>
+		</table>		
+        <hr style = "background-color:#f4cc27; height:0.5%;"> 
+		<p align = "center">Copyright © 2024 All Rights Reserved by Roam Lanka</p>
+	</div>	
+
+
+
+
+</body>
+</html>

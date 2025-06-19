@@ -1,0 +1,419 @@
+<html>
+<head>
+    <title> Roam Lanka </title>
+        <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <style>
+	video {
+  width: 100%;
+  height: auto;
+}
+
+        .navigation {
+            height: 10%;
+            width: 100%;
+            background-color: inherit;
+            margin-top: -1px;
+			background-position:fixed;
+			font-size: 20px;
+        }
+
+        .content {
+            height: 80%;
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+        }
+		
+		.foot2{
+            width: 100%;
+            padding:0px;
+		    background-position:fixed;
+            margin-top:150px;			
+		}
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+        
+        }
+
+        li {
+            display: block;
+            float: right;
+            margin-right: 4%;
+            font-weight: bold;
+            position: relative; 
+        }
+
+        .dropdown-content {
+		    margin-top:1px;
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0);
+            z-index: 1;
+            transform: translateX(0%);
+			border-radius:10px;
+            
+        }	
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: ;
+        }
+
+        li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:hover {
+            color: #85b453; 
+        }
+
+        .horizontalLine {
+            background-color: #f4cc27; 
+            height: 5%;			
+           
+            margin-top:5px;			
+        }
+		
+		.logo{
+		    width : 105;
+            height : 105;
+        	
+		}
+		
+		.viewd,
+		.offers,
+		.trending{
+            display: block;
+            width: 98%;
+			height : 100%;
+            background-color: #f4cc27 ;
+			color : black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+		    border:none;
+			margin-left:45px;
+		}
+		
+		.viewd:hover,
+		.offers:hover,
+		.trending:hover{
+            cursor: pointer;
+            background-color: white;
+			border:2px solid #198238;
+			
+		}
+
+		.visit{
+            display: block;
+            width: 30%;
+            border: none;
+            background-color:  #B0621F;
+            color: white;
+            padding: 7px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 15px;
+			margin-left:245px;
+			margin-top: -33px;
+		}
+		
+
+		.visit:hover{
+            cursor: pointer;
+            background-color: #f4cc27;
+			color:black;
+		}	
+ 
+        .ft{
+		    margin-right: 20px; 
+			font-size:23px;
+		} 
+		
+		.whatsapp,
+		.fb,
+		.twit{
+		    border-radius : 50px;
+            		
+		}
+
+		.whatsapp,
+		.twit,
+		.fb{
+		            width : 50px ;
+					height : 50px ;			
+		}
+
+		
+		.whatsapp:hover,
+		.fb:hover,
+		.twit:hover{
+		            width : 40px ;
+					height : 40px ;
+                    border: 2px solid #000000;					
+		}		
+		
+        .heart{
+
+		    margin-left : 50px; 
+		}
+		
+        .heart1{
+
+		    margin-left : 100px; 
+		}	
+
+		.text-overlay {
+            position: absolute;
+            top: 85%;
+            left: 24%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100px;
+            text-align: left;
+
+        }	
+		
+		.buttonWish{
+		    position:absolute; 
+			left:19%; 
+			width:35px; 
+			height:33px; 
+			background-color:rgba(0,0,0,0); 
+			border : none; 
+			cursor:pointer;
+		}
+		
+		#bor{
+	border-radius:50%;
+	width:400px;
+	height:400px;
+}
+
+
+.block {
+  width: 30%;
+  border: none;
+  background-color: #f4cc27;
+  color: black;
+  padding: 6px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>   
+
+   
+</head>
+
+<body>
+    <div class="navigation">
+	    <div style = "margin-bottom:-50px;">
+            <a href="welcome.html"><img src = "logo.jpg" alt = "Logo Image" class = "logo" width = 125px height = 105px style = "margin-left:20px;"></a>  	
+	    </div>
+        <ul>  
+            <li style="margin-right:0px;"><a href="sign in.html">SIGN IN</a></li>
+            <li><a href="sign up.html">SIGN UP</a></li>
+            <li>
+			    <a>SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="welcome.html#about" style = "margin-top : 30px;"> About Us </a>
+                    <a href="services.html"> Contact Us </a>
+                    <a href="services.html#contact"> Q&A </a>
+                </div> 			
+			</li>
+            <li>
+			<a>TRANSPORTATION</a>
+			    <div class="dropdown-content">
+                    <a href="train.html" style = "margin-top : 30px;"> Train  </a>
+                    <a href="taxi.html"> Taxi </a>
+					<a href="rental.html"> Rental </a>
+                </div>			
+			</li>            
+			<li>
+			    <a>RESORTS</a>
+                <div class="dropdown-content">
+                   
+                    <a href="nuwaraEliya.html" style = "margin-top : 30px;"> Nuwara Eliya </a>
+                    <a href="galle.html"> Galle </a>
+                    <a href="trinco.html"> Trincomalee </a>
+					<a href="kandy.html"> Kandy </a>
+					<a href="anura.html"> Anuradhapuraya </a>
+                </div> 			
+			</li>  
+            <li><a href="camping.html"> CAMPING</a> </li>
+            <li><a href="welcome.html">HOME</a></li>
+        </ul>
+        <hr class="horizontalLine">   
+    </div>	
+	<br><br><br><br>
+	<video width="400" autoplay muted loop>
+  <source src="anuradhapura.mp4" type="video/mp4">
+</video>
+<br><br><br><br>
+    
+    <div class="content">
+
+
+       
+	    <h1><font face="cambria" color="Black" size="10"><center>Welcome to Anuradhapuraya </center></font></h1><br><br>
+	
+	    <table align="center" style="width:70%">
+	        <tr>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;"> Hotel Heladiv
+ </h2>
+	                    <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+	                         Located in a lush green and serene environment, Hotel Heladiv is located 6 km away from the SLAF Anuradhapura Airport. Free WiFi access is available.
+Each room here will provide you with a TV, air conditioning and a terrace. Private bathroom comes with a shower. You can enjoy garden view from the room. Extras include a seating area and cable channels.
+
+
+	                    </p>
+	
+	                    <img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	                    <p>
+	                        <button class="block" onclick="document.location='heladiv.html'">V I S I T</button>
+	                    </p>
+	                    <br><br>
+	            </td>
+
+	            <td style="width:10%"> </td>
+	            <td>
+	                <img id="bor" src="Cinn3.jpg" alt="Yala-Safari-Camping" height="200" width="400">
+	                <br><br>
+	            </td>
+            </tr>
+
+            <tr>
+	            <td>
+	                <img id="bor" src="4u 2.jpg" alt="mahoora-yala" height="200" width="400">
+	                <br><br>
+	            </td>
+	            <td style="width:10%"></td>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;"> Hotel 4 U Saliya Garden
+
+ </h2>
+	                <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+					 Set in Anuradhapura, 4.9 km from Anuradhapura Railway Station, Hotel 4 U Saliya Garden offers accommodation with an outdoor swimming pool, free private parking, a garden and a terrace. With free WiFi, this 4-star hotel has a restaurant and a bar. The accommodation provides evening entertainment and room service.
+
+                    </p>
+	                <img src="half-stars.jpg" alt="half-stars" width="110" height="50">
+	                <p>
+	                    <button class="block" onclick="document.location='saliya.html'">V I S I T</button>
+	                </p>
+	               <br><br>
+	            </td>
+            </tr>
+
+            <tr>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;">Aryana Boutique Hotel
+</h2>
+	                <p style="font-family: Arial, sans-serif; line-height: 1.5;">In a prime location in the centre of Anuradhapura, Aryana Boutique Hotel offers air-conditioned rooms with free WiFi, free private parking and room service. Among the various facilities are an outdoor swimming pool, a garden, as well as a shared lounge. The accommodation provides a concierge service, a tour desk and currency exchange for guests.
+                    
+					
+					</p>
+                    <img src="four-stars.jpg" alt="four-stars" width="100" height="25">
+	                <p>
+	                <button class="block" onclick="document.location='aryana.html'">V I S I T</button>
+	                </p>
+	                <br><br>
+	            </td>
+	            <td style="width:10%"></td>
+	            <td>
+	                <img id="bor" src="Aryana3.jpg" alt="big-game-camp" height="200" width="400">
+	                <br><br>
+	            </td>
+            </tr>
+	
+	        <tr>
+	            <td>
+	                <img id="bor" src="sacred1.jpg" alt="wild-glamping-galoya" height="200" width="400">
+	                <br><br>
+	            </td>
+	            <td style="width:10%"></td>
+	            <td>
+	                <h2 style="font-family: Arial, sans-serif;"> Sacred City Tourist Resort
+ </h2>
+	                    <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+Conveniently situated in Anuradhapura, Sacred City Tourist Resort provides air-conditioned rooms with free WiFi, free private parking and room service. With city views, this accommodation features a patio. Featuring family rooms, this property also provides guests with a sun terrace.
+                        </p>
+                    <img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	                <p>
+	                    <button class="block" onclick="document.location='sacred.html'">V I S I T</button>
+	                </p>
+	                <br><br>
+	           </td>
+               </tr>
+			   
+			    <tr>
+	                <td>
+	                    <h2 style="font-family: Arial, sans-serif;"> Rajarata Reach Resort
+
+ </h2>
+	                        <p style="font-family: Arial, sans-serif; line-height: 1.5;">Conveniently located in the centre of Anuradhapura, Rajarata Reach Resort offers free WiFi throughout the property, a restaurant and free private parking for guests who drive. The property is set 2.5 km from Anuradhapura Railway Station, 3.7 km from Jaya Sri Maha Bodhi and 4.1 km from Attikulama Tank. Some units at the property feature a balcony with a city view.
+
+                                <img src="five-stars.jpg" alt="five-stars" width="100" height="50">
+	                        <p>
+	                            <button class="block" onclick="document.location='rajarata.html'">V I S I T</button>
+	                        </p>
+	                        <br><br>
+	                </td>
+	                <td style="width:10%"></td>
+	                <td>
+	                    <img id="bor" src="Rajarata2.jpg" alt="wilpattu-safari-camp" height="200" width="400">
+	                    <br><br>
+	                </td>
+                </tr>
+	</div>
+    <br><br>
+
+   <div style = "foot2">
+        <table>
+			 <hr style = "background-color:#f4cc27; height:0.5%;">
+            <tr>
+			    <td> <a href = "welcome.html"><img src = "logo.jpg" alt = "Logo Image" style = "margin-left:50px;"><a/> </td>
+                <td> <a href = "welcome.html" class = "ft" style = "margin-left : 160px;"> Home <a/> </td>
+                <td> <a href = "welcome.html#about" class = "ft" style = "margin-left : 50px;"> About Us <a/> </td>		
+                <td> <a href = "services.html" class = "ft" style = "margin-left : 50px;"> Contact Us <a/> </td>
+                <td> <a href = "" class = "ft" style = "margin-left : 50px;"> Services <a/> </td>
+                <td> 
+
+				    <a href = "" class = "ft"> <img src = "whatsapp.jpg" alt = "whatsapp Image" class = "whatsapp" style = "margin-right:-10px; margin-left:80px;"> <a/> 
+				    <a href = "" class = "ft"> <img src = "fb.jpg" alt = "Facebook Image" class = "fb" style = "margin-right:-10px;"> <a/>
+				    <a href = "" class = "ft"> <img src = "twit.jpg" alt = "Twitter Image" class = "twit"> <a/>
+				
+				</td>				
+			</td>
+		</table>		
+        <hr style = "background-color:#f4cc27; height:0.5%;"> 
+		<p align = "center">Copyright © 2024 All Rights Reserved by Roam Lanka</p>
+	</div>	
+	
+</body>
+</html>
